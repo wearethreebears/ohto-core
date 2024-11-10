@@ -13,3 +13,6 @@ export const sortByString = (a?: string, b?: string, reverse?: boolean) => {
   if (titleA > titleB) return reverse ? -1 : 1;
   return 0;
 };
+
+export const arrayFromRange = (start: number, end: number) =>
+  Array.from({ length: end - start + 1 }, (_, index) => start + index);
