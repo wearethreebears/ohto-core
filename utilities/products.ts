@@ -1,8 +1,11 @@
 import type {
   ICreateEditProductFormData,
   IVariant,
-} from "@ohto/types/products.types";
-import { DEFAULT_VARIANT_UNIQUE_ID } from "@ohto/constants/products/productVariants";
+} from "@ohto/core/types/products.types";
+import type { IProductResource } from "@ohto/core/types/products";
+import type { IFileResource } from "@ohto/client/types/folders/files.types";
+import { EFileType } from "@ohto/client/types/folders/files.types";
+import { DEFAULT_VARIANT_UNIQUE_ID } from "@ohto/core/constants/products/productVariants";
 import { slugRegex } from "./urls";
 
 export const getUniqueVariantId = (attributeIds?: number[]): string =>
@@ -27,4 +30,9 @@ export const isValidActiveProduct = (
       !!producTRequestData.productVariants.length) ||
     false
   );
+};
+
+export const getFeaturedImage = (product: IProductResource): IFileResource => {
+  return product.mediaFiles.find(({ file }) => file.type === EFileType.IMAGE)
+    .file;
 };

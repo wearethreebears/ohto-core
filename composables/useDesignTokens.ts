@@ -13,7 +13,12 @@ export const useDesignTokens = <
   const designTokens = () => {
     const styles: string[] = [];
     Object.entries(tokenMap).forEach(([key, value]) => {
-      const wrappedValue = value.startsWith("--") ? `var(${value})` : value;
+      const wrappedValue =
+        typeof value === "number"
+          ? value
+          : value.startsWith("--")
+          ? `var(${value})`
+          : value;
       const variableClass = `--${key}: ${wrappedValue};`;
       styles.push(variableClass);
     });
