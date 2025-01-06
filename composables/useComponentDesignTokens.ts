@@ -39,14 +39,14 @@ export const useComponentDesignTokens = <Tokens extends Record<string, any>>(
     styles.push(designTokens);
   }
 
-  useHead({
-    style: [
-      {
-        id: tokenClass,
-        innerHTML: `.${tokenClass} { ${styles.join()} }`,
-      },
-    ],
-  });
+  // useHead({
+  //   style: [
+  //     {
+  //       id: tokenClass,
+  //       innerHTML: `.${tokenClass} { ${styles.join()} }`,
+  //     },
+  //   ],
+  // });
 
   return {
     tokenClass,
