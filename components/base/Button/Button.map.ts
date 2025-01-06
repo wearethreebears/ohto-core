@@ -1,4 +1,5 @@
 import type { TButtonDisplayMap, TButtonComponentMap } from "./Button.types";
+import { defineAsyncComponent } from "vue";
 
 export const DISPLAY_MAP: TButtonDisplayMap = {
   DEFAULT: defineAsyncComponent(
