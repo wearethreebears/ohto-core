@@ -2,7 +2,7 @@ import type {
   ICreateEditProductFormData,
   IVariant,
 } from "@ohto/core/types/products.types";
-import type { IProductResource } from "@ohto/core/types/products";
+import type { IProductResource } from "@ohto/client/types/products/index.types";
 import type { IFileResource } from "@ohto/client/types/folders/files.types";
 import { EFileType } from "@ohto/client/types/folders/files.types";
 import { DEFAULT_VARIANT_UNIQUE_ID } from "@ohto/core/constants/products/productVariants";
@@ -33,6 +33,6 @@ export const isValidActiveProduct = (
 };
 
 export const getFeaturedImage = (product: IProductResource): IFileResource => {
-  return product.mediaFiles.find(({ file }) => file.type === EFileType.IMAGE)
-    .file;
+  return product.mediaFiles?.find(({ file }) => file.type === EFileType.IMAGE)
+    ?.file;
 };

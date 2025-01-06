@@ -7,10 +7,14 @@
       designTokenClasses,
       // Don't place all custom classes here, translate is controlled by state
       STATE_CLASS_MAP[props.state],
-      'flex flex-col z-50 bg-white p-4 absolute rounded-lg',
+      'flex flex-col z-50 p-4 absolute rounded-lg',
       'transition-all ease-in-out duration-300',
     ]"
   >
+    <Subtitle tag="h2" class="mb-4">{{ props.title }}</Subtitle>
+
+    <slot />
+
     <IconButton
       icon="CROSS"
       @click="onClose"
@@ -20,9 +24,6 @@
         'absolute',
       ]"
     />
-    <Subtitle tag="h2" class="mb-4">{{ props.title }}</Subtitle>
-
-    <slot />
   </Aside>
 </template>
 

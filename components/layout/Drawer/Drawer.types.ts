@@ -41,5 +41,5 @@ export type TDrawerEnterFromTokens = Pick<
 
 export type TDrawerStaticTokens = Pick<
   IDefaultTokens & IDrawerCustomTokens,
-  "closeButton__top" | "closeButton__right"
+  "closeButton__top" | "closeButton__right" | "backgroundColor"
 >;

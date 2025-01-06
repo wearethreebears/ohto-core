@@ -35,6 +35,7 @@ const runtimeConfig = useRuntimeConfig();
 
 const props = withDefaults(defineProps<IPaginationProps>(), {
   linkCount: 9,
+  pageCount: 1
 });
 
 const router = useRouter();

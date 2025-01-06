@@ -9,6 +9,7 @@ import { $system } from "~/DesignTokens.config";
 export const STATIC_TOKENS: TDrawerStaticTokens = {
   closeButton__right: $system.spacing.$default,
   closeButton__top: $system.spacing.$default,
+  backgroundColor: $system.colors.shade.$0,
 };
 
 export const ENTER_FROM_TOKENS: Record<

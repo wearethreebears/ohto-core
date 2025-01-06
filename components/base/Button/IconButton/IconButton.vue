@@ -1,6 +1,7 @@
 <template>
   <button
     class="min-w-11 min-h-11 flex justify-center items-center cursor-pointer"
+    type="button"
     :aria-label="props.label"
   >
     <Icon :icon="props.icon" :size="props.size" />

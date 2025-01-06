@@ -50,6 +50,9 @@ export const ICON_MAP: TIconMap = {
   HERETIC_LOGO: defineAsyncComponent({
     loader: () => import("./icons/IconHereticLogo.vue"),
   }),
+  MINUS: defineAsyncComponent({
+    loader: () => import("./icons/IconMinus.vue"),
+  }),
   ORDERS: defineAsyncComponent({
     loader: () => import("./icons/IconOrders.vue"),
   }),

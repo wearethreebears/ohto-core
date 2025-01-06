@@ -7,7 +7,7 @@ import type {
 
 export const STATE_CLASS_MAP: TClassMap<TDrawerState> = {
   DEFAULT: "translate-y-[--translateY] translate-x-[--translateX]",
-  OPEN: "translate-y-[--open__translateY] translate-x-[--open__translateX]",
+  OPEN: "translate-y-[--open__translateY] translate-x-[--open__translateX] shadow-lg",
 };
 
 export const CUSTOM_CLASS_TOKEN_MAP: Record<

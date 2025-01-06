@@ -17,6 +17,7 @@ export type TIcon =
   | "FOLDER_CLOSED"
   | "FOLDER_PLUS"
   | "HERETIC_LOGO"
+  | "MINUS"
   | "ORDERS"
   | "PRODUCTS"
   | "PLUS"
