@@ -1,16 +1,18 @@
 {
   "name": "@ohto/core",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Liam Hall",
   "license": "MIT",
   "dependencies": {
+    "@ohto/core": "^0.2.2",
     "@unhead/vue": "^1.11.14",
-    "@vueuse/core": "^12.0.0"
+    "@vueuse/core": "^12.0.0",
+     "nuxt": "3.12.3"
   },
   "description": "Core ohto components, types and utilities for Ohto commerce applications",
   "main": "index.ts",
   "devDependencies": {
-    "vue": "^3.5.13"
+
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

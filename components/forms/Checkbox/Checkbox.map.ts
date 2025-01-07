@@ -1,4 +1,5 @@
 import type { TCheckboxDesignMap } from "./Checkbox.types";
+import { defineAsyncComponent } from "vue";
 
 export const DESIGN_MAP: TCheckboxDesignMap = {
   DEFAULT: defineAsyncComponent(

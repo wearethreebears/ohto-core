@@ -31,18 +31,20 @@ import PaginationControl from "./PaginationControl/PaginationControl.vue";
 import { arrayFromRange } from "@ohto/core/utilities/arrays";
 import PaginationNumber from "./PaginationNumber/PaginationNumber.vue";
 import { computed } from "vue";
-const runtimeConfig = useRuntimeConfig();
+// const runtimeConfig = useRuntimeConfig();
 
 const props = withDefaults(defineProps<IPaginationProps>(), {
   linkCount: 9,
-  pageCount: 1
+  pageCount: 1,
 });
 
-const router = useRouter();
+// const router = useRouter();
 
-const currentPage = computed(
-  (): string => (router.currentRoute.value.query.page as string) || "1"
-);
+// const currentPage = computed(
+//   (): string => (router.currentRoute.value.query.page as string) || "1"
+// );
+
+const currentPage = computed((): string => "1");
 
 const pageNumbers = computed((): number[] => {
   if (props.pageCount <= props.linkCount)
@@ -80,10 +82,11 @@ const getPageState = (page: number): TPaginationPageState =>
   `${page}` === currentPage.value ? "ACTIVE" : "DEFAULT";
 
 const getPagePath = (page: number): string => {
-  const path = new URL(
-    router.currentRoute.value.fullPath,
-    runtimeConfig.public.URL_APP
-  );
+  // const path = new URL(
+  //   router.currentRoute.value.fullPath,
+  //   runtimeConfig.public.URL_APP
+  // );
+  const path = new URL("", "");
   const params = path.searchParams;
 
   params.set("page", `${page}`);

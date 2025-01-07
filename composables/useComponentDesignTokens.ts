@@ -3,6 +3,7 @@ import {
   type IUseDesignTokens as IUseCoreDesignTokens,
 } from "./index";
 import { DEFAULT_CLASS_TOKEN_MAP } from "../DesignTokens.map";
+// import { useHead } from "@unhead/vue";
 
 interface IUseDesignTokens extends IUseCoreDesignTokens {
   tokenClass: string;
