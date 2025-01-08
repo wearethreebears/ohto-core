@@ -3,7 +3,7 @@ import {
   type IUseDesignTokens as IUseCoreDesignTokens,
 } from "./index";
 import { DEFAULT_CLASS_TOKEN_MAP } from "../DesignTokens.map";
-// import { useHead } from "@unhead/vue";
+import { useHead } from "@unhead/vue";
 
 interface IUseDesignTokens extends IUseCoreDesignTokens {
   tokenClass: string;
@@ -40,14 +40,14 @@ export const useComponentDesignTokens = <Tokens extends Record<string, any>>(
     styles.push(designTokens);
   }
 
-  // useHead({
-  //   style: [
-  //     {
-  //       id: tokenClass,
-  //       innerHTML: `.${tokenClass} { ${styles.join()} }`,
-  //     },
-  //   ],
-  // });
+  useHead({
+    style: [
+      {
+        id: tokenClass,
+        innerHTML: `.${tokenClass} { ${styles.join()} }`,
+      },
+    ],
+  });
 
   return {
     tokenClass,

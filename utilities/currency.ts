@@ -1,4 +1,4 @@
-import { ohtoConfig } from "../../../../../ohto.config.ts";
+import { ohtoConfig } from "../../../../ohto.config.ts";
 
 export const transformNumberToCurrency = (
   number: number | undefined

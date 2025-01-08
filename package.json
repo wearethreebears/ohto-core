@@ -1,13 +1,9 @@
 {
   "name": "@ohto/core",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "Liam Hall",
   "license": "MIT",
   "dependencies": {
-    "@ohto/core": "^0.2.2",
-    "@unhead/vue": "^1.11.14",
-    "@vueuse/core": "^12.0.0",
-     "nuxt": "3.12.3"
   },
   "description": "Core ohto components, types and utilities for Ohto commerce applications",
   "main": "index.ts",
