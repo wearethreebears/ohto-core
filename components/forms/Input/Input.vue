@@ -49,6 +49,7 @@ import { Icon } from "@ohto/core/components/base";
 import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Input.map";
 import { useTokenClass } from "@ohto/core/composables";
+import { ref } from "vue";
 
 const props = withDefaults(defineProps<IInputProps>(), {
   type: "text",
