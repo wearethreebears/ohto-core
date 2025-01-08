@@ -22,6 +22,7 @@ import Checkbox from "../Checkbox/Checkbox.vue";
 import Fieldset from "../Fieldset/Fieldset.vue";
 import Group from "../Group/Group.vue";
 import type { ICheckboxGroupProps } from "./CheckboxGroup.types";
+import { ref } from "vue";
 
 const props = withDefaults(defineProps<ICheckboxGroupProps>(), {
   design: "DEFAULT",

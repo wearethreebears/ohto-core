@@ -25,6 +25,7 @@
 import Label from "../Label/Label.vue";
 import { DESIGN_MAP } from "./Checkbox.map";
 import type { ICheckboxProps } from "./Checkbox.types";
+import { ref } from "vue";
 
 const props = withDefaults(defineProps<ICheckboxProps>(), {
   design: "DEFAULT",
