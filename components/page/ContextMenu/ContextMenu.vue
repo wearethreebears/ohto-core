@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import type { IContextMenuProps } from "./ContextMenu.types";
 import { onClickOutside } from "@vueuse/core";
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 import { useContextMenuStore } from "~/stores/useContextMenuStore";
 

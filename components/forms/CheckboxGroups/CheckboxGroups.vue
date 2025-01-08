@@ -21,6 +21,7 @@ import type {
   ICheckboxGroupsProps,
   TCheckboxGroupCollection,
 } from "./CheckboxGroups.types";
+import { watch, reactive, onMounted } from "vue";
 
 const props = defineProps<ICheckboxGroupsProps>();
 
