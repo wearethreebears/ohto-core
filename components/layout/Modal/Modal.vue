@@ -38,7 +38,7 @@ import { CUSTOM_CLASS_TOKEN_MAP } from "./Modal.map";
 import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
 import { useTokenClass } from "@ohto/core/composables";
 
-const id = useId();
+const id = "testId";
 const props = withDefaults(defineProps<IModalProps>(), {});
 
 const { tokenClass } = useTokenClass("Modal");
