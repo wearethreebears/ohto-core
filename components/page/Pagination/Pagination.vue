@@ -86,14 +86,15 @@ const getPagePath = (page: number): string => {
   //   router.currentRoute.value.fullPath,
   //   runtimeConfig.public.URL_APP
   // );
-  const path = new URL("", "");
-  const params = path.searchParams;
+  // const path = new URL("", "");
+  // const params = path.searchParams;
 
-  params.set("page", `${page}`);
+  // params.set("page", `${page}`);
 
-  path.search = params.toString();
-  const origin = path.origin;
-  return path.toString().replace(origin, "");
+  // path.search = params.toString();
+  // const origin = path.origin;
+  // return path.toString().replace(origin, "");
+  return "";
 };
 
 const getPreviousPath = (): string => {
