@@ -48,7 +48,7 @@
         </TR>
       </template>
     </Table>
-    <Pagination :page-count @on:page-change="emit('on:change-page')" />
+    <Pagination :page-count @on:change-page="emit('on:change-page')" />
   </div>
 </template>
 
