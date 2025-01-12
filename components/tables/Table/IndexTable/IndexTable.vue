@@ -63,7 +63,10 @@ const props = withDefaults(defineProps<IIndexTableProps>(), {
   pageCount: 1,
 });
 
-const emit = defineEmits(["on:delete"]);
+const emit = defineEmits<{
+  (event: "on:delete", id: string | number): void;
+  (event: "on:change-page", pageNumber: string): void;
+}>();
 
 const onDelete = (id: string | number) => emit("on:delete", id);
 </script>

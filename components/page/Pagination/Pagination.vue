@@ -30,7 +30,7 @@ import type { TPaginationPageState } from "./Pagination.types";
 import PaginationControl from "./PaginationControl/PaginationControl.vue";
 import { arrayFromRange } from "@ohto/core/utilities/arrays";
 import PaginationNumber from "./PaginationNumber/PaginationNumber.vue";
-import { computed } from "vue";
+import { computed, watch } from "vue";
 import { useRouter } from "vue-router";
 import { ohtoConfig } from "../../../../ohto.config.ts";
 
@@ -38,6 +38,10 @@ const props = withDefaults(defineProps<IPaginationProps>(), {
   linkCount: 9,
   pageCount: 1,
 });
+
+const emit = defineEmits<{
+  (event: "on:change-page", pageNumber: string): void;
+}>();
 
 const router = useRouter();
 
@@ -77,9 +81,6 @@ const pageNumbers = computed((): number[] => {
   return [1, ...middle.slice(0, adjustedLinkCount), props.pageCount];
 });
 
-const getPageState = (page: number): TPaginationPageState =>
-  `${page}` === currentPage.value ? "ACTIVE" : "DEFAULT";
-
 const getPagePath = (page: number): string => {
   const path = new URL(router.currentRoute.value.fullPath, ohtoConfig.app.url);
   const params = path.searchParams;
@@ -98,4 +99,6 @@ const getNextPath = (): string => {
   if (+currentPage.value >= props.pageCount) return "";
   return getPagePath(+currentPage.value + 1);
 };
+
+watch(currentPage, (newPage) => emit("on:change-page", newPage));
 </script>

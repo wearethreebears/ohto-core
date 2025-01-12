@@ -10,10 +10,10 @@ export const STATE_TOKENS: Record<
   TPaginationPageStateTokens
 > = {
   DEFAULT: {
-    typographyColor: $system.colors.brand.$white,
+    typographyColor: $system.colors.brand.$black,
     backgroundColor: $system.colors.brand.$white,
     borderColor: $system.colors.shade.$500,
-    hover__typographyColor: $system.colors.brand.$white,
+    hover__typographyColor: $system.colors.brand.$black,
     hover__backgroundColor: $system.colors.shade.$300,
   },
   ACTIVE: {
