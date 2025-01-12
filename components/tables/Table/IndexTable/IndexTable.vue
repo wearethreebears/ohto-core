@@ -65,7 +65,7 @@ const props = withDefaults(defineProps<IIndexTableProps>(), {
 
 const emit = defineEmits<{
   (event: "on:delete", id: number): void;
-  (event: "on:change-page", pageNumber: string): void;
+  (event: "on:change-page"): void;
 }>();
 
 const onDelete = (id: number) => emit("on:delete", id);
