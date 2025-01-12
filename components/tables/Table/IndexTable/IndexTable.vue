@@ -42,7 +42,7 @@
           </TD>
           <TD width="44">
             <div class="flex justify-center">
-              <IconButton icon="TRASH" @click="onDelete(row.id)" />
+              <IconButton icon="TRASH" @click="onDelete(+row.id)" />
             </div>
           </TD>
         </TR>
@@ -64,9 +64,9 @@ const props = withDefaults(defineProps<IIndexTableProps>(), {
 });
 
 const emit = defineEmits<{
-  (event: "on:delete", id: string | number): void;
+  (event: "on:delete", id: number): void;
   (event: "on:change-page", pageNumber: string): void;
 }>();
 
-const onDelete = (id: string | number) => emit("on:delete", id);
+const onDelete = (id: number) => emit("on:delete", id);
 </script>
