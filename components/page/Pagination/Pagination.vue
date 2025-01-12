@@ -102,6 +102,9 @@ const getNextPath = (): string => {
 
 watch(
   () => currentPage.value,
-  (newPage) => emit("on:change-page", newPage)
+  (newPage) => {
+    console.log("NEW PAGE", newPage);
+    emit("on:change-page", newPage);
+  }
 );
 </script>
