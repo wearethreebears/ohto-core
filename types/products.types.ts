@@ -17,6 +17,9 @@ export interface IVariant {
   sku?: string;
   price: number;
   stock: number;
+  vendorSku?: string;
+  vendorPrice?: number;
+  gtin?: string;
   active?: boolean;
   billingModelType?: IBillingModelTypeResource;
   billingModel?: IBillingModelResource;

@@ -6,5 +6,5 @@ export const transformNumberToCurrency = (
   return new Intl.NumberFormat(ohtoConfig.locale, {
     style: "currency",
     currency: ohtoConfig.currency,
-  }).format(number || 0);
+  }).format(number / 100 || 0);
 };
