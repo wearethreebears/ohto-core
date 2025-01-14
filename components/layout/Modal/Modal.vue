@@ -1,10 +1,20 @@
 <template>
   <div>
     <template v-if="$slots.button">
-      <button :popovertarget="id" popovertargetaction="show" type="button">
+      <button
+        :popovertarget="id"
+        popovertargetaction="show"
+        type="button"
+        @click="emit('on:open')"
+      >
         <slot name="button" /></button
     ></template>
-    <Button v-else :popovertarget="id" popovertargetaction="show" type="button"
+    <Button
+      v-else
+      :popovertarget="id"
+      popovertargetaction="show"
+      type="button"
+      @click="emit('on:open')"
       >Toggle the popover</Button
     >
 
@@ -17,6 +27,7 @@
         customDesignTokenClasses,
         'rounded-lg relative',
       ]"
+      @click="emit('on:close')"
     >
       <IconButton
         icon="CROSS"
@@ -40,6 +51,11 @@ import { useTokenClass } from "@ohto/core/composables";
 
 const id = "testId";
 const props = withDefaults(defineProps<IModalProps>(), {});
+
+const emit = defineEmits<{
+  (event: "on:open"): void;
+  (event: "on:close"): void;
+}>();
 
 const { tokenClass } = useTokenClass("Modal");
 const { designTokenClasses, customDesignTokenClasses } =
