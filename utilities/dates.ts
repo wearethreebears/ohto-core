@@ -1,4 +1,4 @@
-import { ohtoConfig } from "../../../../ohto.config.ts";
+import { ohtoConfig } from "@ohtoConfig";
 
 export const transformDateStringToDateLong = (
   dateString: string,
