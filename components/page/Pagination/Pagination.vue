@@ -32,7 +32,7 @@ import { arrayFromRange } from "@ohto/core/utilities/arrays";
 import PaginationNumber from "./PaginationNumber/PaginationNumber.vue";
 import { computed, watch } from "vue";
 import { useRouter } from "vue-router";
-import { ohtoConfig } from "../../../../ohto.config.ts";
+import { ohtoConfig } from "@ohtoConfig";
 
 const props = withDefaults(defineProps<IPaginationProps>(), {
   linkCount: 9,
