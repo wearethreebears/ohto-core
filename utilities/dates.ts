@@ -1,5 +1,7 @@
 import { ohtoConfig } from "@ohtoConfig";
 
+const config = ohtoConfig();
+
 export const transformDateStringToDateLong = (
   dateString: string,
   options: {
@@ -20,6 +22,6 @@ const transformDateStringToDate = (
   return new Intl.DateTimeFormat("en-GB", {
     timeStyle: options.timeStyle,
     dateStyle: options.dateStyle,
-    timeZone: ohtoConfig.timezone,
+    timeZone: config.timezone,
   }).format(dateString);
 };

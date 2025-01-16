@@ -34,6 +34,8 @@ import { computed, watch } from "vue";
 import { useRouter } from "vue-router";
 import { ohtoConfig } from "@ohtoConfig";
 
+const config = ohtoConfig();
+
 const props = withDefaults(defineProps<IPaginationProps>(), {
   linkCount: 9,
   pageCount: 1,
@@ -82,7 +84,7 @@ const pageNumbers = computed((): number[] => {
 });
 
 const getPagePath = (page: number): string => {
-  const path = new URL(router.currentRoute.value.fullPath, ohtoConfig.app.url);
+  const path = new URL(router.currentRoute.value.fullPath, config.app.url);
   const params = path.searchParams;
   params.set("page", `${page}`);
   path.search = params.toString();
