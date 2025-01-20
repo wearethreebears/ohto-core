@@ -25,7 +25,7 @@
         tokenClass,
         designTokenClasses,
         customDesignTokenClasses,
-        'rounded-lg relative',
+        'rounded-lg relative max-h-[90vh]',
       ]"
       @click="emit('on:close')"
     >

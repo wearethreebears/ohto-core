@@ -6,5 +6,5 @@ export const STATIC_TOKENS: TModalStaticTokens = {
   backdrop__backgroundColor: $system.colors.brand.$black,
   backdrop__backgroundOpacity: $system.opacity.$80,
   backgroundColor: $system.colors.brand.$white,
-  width: "768px",
+  width: "90vw",
 };
