@@ -1,7 +1,9 @@
 import type { IDefaultTokens } from "~/DesignTokens.types";
 import type { TComponentTheme } from "~/types/components/themes";
 
-export type TBodyTheme = TComponentTheme<"DEFAULT" | "INHERIT">;
+export type TBodyTheme = TComponentTheme<
+  "DEFAULT" | "SECONDARY" | "TERTIARY" | "INHERIT"
+>;
 
 export type TBodyTag =
   | "abbr"
@@ -18,7 +20,7 @@ export type TBodyTag =
   | "sup"
   | "strong";
 
-export type TBodySize = "DEFAULT";
+export type TBodySize = "DEFAULT" | "SMALL";
 
 export interface IBodyProps {
   tag?: TBodyTag;

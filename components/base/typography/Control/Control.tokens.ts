@@ -17,6 +17,12 @@ export const THEME_TOKENS: Record<TControlTheme, TControlColorTokens> = {
   DEFAULT: {
     typographyColor: $system.colors.shade.$700,
   },
+  SECONDARY: {
+    typographyColor: $system.colors.brand.$white,
+  },
+  TERTIARY: {
+    typographyColor: $system.colors.shade.$500,
+  },
   INHERIT: {
     typographyColor: $system.colors.$inherit,
   },

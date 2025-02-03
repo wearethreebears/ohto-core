@@ -4,7 +4,7 @@
     :class="[
       tokenClass,
       designTokenClasses,
-      'justify-center items-center w-full flex focus:ring-2 focus:ring-offset-2 transition-colors ease-in-out duration-300 outline-none py-2 px-4 rounded-lg border-2 border-solid',
+      'justify-center items-center w-fit flex focus:ring-2 focus:ring-offset-2 transition-colors ease-in-out duration-300 outline-none py-1 px-4 rounded-full border-2 border-solid font-sans text-xs',
     ]"
     :data-testid="testId"
   >

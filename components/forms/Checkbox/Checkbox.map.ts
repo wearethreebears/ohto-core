@@ -8,4 +8,7 @@ export const DESIGN_MAP: TCheckboxDesignMap = {
   TOGGLE: defineAsyncComponent(
     () => import("./CheckboxToggle/CheckboxToggle.vue")
   ),
+  CHECK: defineAsyncComponent(
+    () => import("./CheckboxCheck/CheckboxCheck.vue")
+  ),
 };

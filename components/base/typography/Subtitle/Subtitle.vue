@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" :class="[tokenClass, designTokenClasses]"
+  <component :is="tag" :class="[tokenClass, designTokenClasses, 'font-sans']"
     ><slot
   /></component>
 </template>

@@ -90,7 +90,6 @@ const getPagePath = (page: number): string => {
   path.search = params.toString();
   const origin = path.origin;
   return path.toString().replace(origin, "");
-  return "";
 };
 
 const getPreviousPath = (): string => {

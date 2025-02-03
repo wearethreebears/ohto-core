@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    :class="[tokenClass, designTokenClasses, 'font-semibold']"
+    :class="[tokenClass, designTokenClasses, 'font-medium font-sans']"
     ><slot
   /></component>
 </template>

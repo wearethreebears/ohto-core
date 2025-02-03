@@ -1,7 +1,9 @@
 import type { IDefaultTokens } from "~/DesignTokens.types";
 import type { TComponentTheme } from "~/types/components/themes";
 
-export type TControlTheme = TComponentTheme<"DEFAULT" | "INHERIT">;
+export type TControlTheme = TComponentTheme<
+  "DEFAULT" | "SECONDARY" | "TERTIARY" | "INHERIT"
+>;
 
 export type TControlTag = "span" | "strong";
 

@@ -14,9 +14,12 @@
         :value="value"
         :checked="checked"
         @change="onChange"
-        class="peer appearance-none absolute focus:ring-0"
+        class="peer appearance-none absolute focus:ring-0 invisible"
         :disabled="disabled"
       />
+      <template #label>
+        <slot name="label" />
+      </template>
     </component>
   </Label>
 </template>

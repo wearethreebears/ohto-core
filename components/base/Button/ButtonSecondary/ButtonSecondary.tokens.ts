@@ -7,18 +7,18 @@ import type { TButtonTheme } from "../Button.types";
 
 export const THEME_TOKENS: Record<TButtonTheme, TButtonThemeTokens> = {
   DEFAULT: {
-    backgroundColor: $system.colors.brand.$white,
-    typographyColor: $system.colors.brand.$green,
-    borderColor: $system.colors.brand.$green,
-    hover__backgroundColor: $system.colors.brand.$white,
-    hover__typographyColor: $system.colors.brand.$green,
+    borderColor: $system.colors.brand.$black,
+    backgroundColor: $system.colors.brand.$black,
+    typographyColor: $system.colors.brand.$white,
+    hover__backgroundColor: $system.colors.$inherit,
+    hover__typographyColor: $system.colors.brand.$black,
   },
   SECONDARY: {
-    backgroundColor: $system.colors.brand.$white,
-    typographyColor: $system.colors.brand.$white,
     borderColor: $system.colors.brand.$white,
-    hover__backgroundColor: $system.colors.brand.$white,
-    hover__typographyColor: $system.colors.brand.$green,
+    backgroundColor: $system.colors.brand.$white,
+    typographyColor: $system.colors.brand.$black,
+    hover__backgroundColor: $system.colors.$inherit,
+    hover__typographyColor: $system.colors.brand.$white,
   },
 };
 

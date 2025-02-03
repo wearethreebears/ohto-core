@@ -14,10 +14,22 @@ export const SIZE_TOKENS: Record<TTitleSize, TTitleSizeTokens> = {
   SMALL: {
     typographySize: "1.25rem",
   },
+  MEDIUM: {
+    typographySize: "2.25rem",
+  },
+  LARGE: {
+    typographySize: "2.75rem",
+  },
+  EXTRA_LARGE: {
+    typographySize: "3.5rem",
+  },
 };
 
 export const THEME_TOKENS: Record<TTitleTheme, TTitleColorTokens> = {
   DEFAULT: {
     typographyColor: $system.colors.brand.$black,
+  },
+  SECONDARY: {
+    typographyColor: $system.colors.brand.$white,
   },
 };

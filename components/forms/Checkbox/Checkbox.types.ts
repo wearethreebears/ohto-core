@@ -1,4 +1,4 @@
-export type TCheckboxDesign = "DEFAULT" | "TOGGLE";
+export type TCheckboxDesign = "DEFAULT" | "TOGGLE" | "CHECK";
 export type TCheckboxDesignMap = Record<TCheckboxDesign, Component>;
 
 export interface ICheckbox {

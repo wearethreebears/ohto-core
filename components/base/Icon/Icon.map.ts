@@ -32,6 +32,9 @@ export const ICON_MAP: TIconMap = {
   CHEVRON_UP: defineAsyncComponent({
     loader: () => import("./icons/IconChevronUp.vue"),
   }),
+  CIRCLE: defineAsyncComponent({
+    loader: () => import("./icons/IconCircle.vue"),
+  }),
   CUSTOMERS: defineAsyncComponent({
     loader: () => import("./icons/IconCustomers.vue"),
   }),
@@ -40,6 +43,9 @@ export const ICON_MAP: TIconMap = {
   }),
   EDIT: defineAsyncComponent({
     loader: () => import("./icons/IconEdit.vue"),
+  }),
+  FILTERS: defineAsyncComponent({
+    loader: () => import("./icons/IconFilters.vue"),
   }),
   FOLDER_CLOSED: defineAsyncComponent({
     loader: () => import("./icons/IconFolderClosed.vue"),
@@ -62,11 +68,17 @@ export const ICON_MAP: TIconMap = {
   PRODUCTS: defineAsyncComponent({
     loader: () => import("./icons/IconProducts.vue"),
   }),
+  PROFILE: defineAsyncComponent({
+    loader: () => import("./icons/IconProfile.vue"),
+  }),
   SEARCH: defineAsyncComponent({
     loader: () => import("./icons/IconSearch.vue"),
   }),
   TICK: defineAsyncComponent({
     loader: () => import("./icons/IconTick.vue"),
+  }),
+  TICK_FILLED: defineAsyncComponent({
+    loader: () => import("./icons/IconTickFilled.vue"),
   }),
   TRASH: defineAsyncComponent({
     loader: () => import("./icons/IconTrash.vue"),
