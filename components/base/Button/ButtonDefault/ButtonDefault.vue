@@ -4,7 +4,7 @@
     :class="[
       tokenClass,
       designTokenClasses,
-      'justify-center items-center w-full flex transition-colors ease-in-out duration-300 rounded-lg',
+      'justify-center items-center w-full flex transition-colors ease-in-out duration-300 rounded-lg disabled:bg-slate-300 disabled:text-slate-500 disabled:cursor-not-allowed',
     ]"
     :data-testid="testId"
   >

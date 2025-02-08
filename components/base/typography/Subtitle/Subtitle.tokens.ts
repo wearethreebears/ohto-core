@@ -25,4 +25,7 @@ export const THEME_TOKENS: Record<TSubtitleTheme, TSubtitleColorTokens> = {
   TERTIARY: {
     typographyColor: $system.colors.shade.$500,
   },
+  INHERIT: {
+    typographyColor: $system.colors.$inherit,
+  },
 };

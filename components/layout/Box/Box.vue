@@ -3,6 +3,7 @@
     data-component="Box"
     :class="[tokenClass, designTokenClasses, 'rounded-lg border border-solid']"
   >
+    <Subtitle v-if="props.title">{{ props.title }}</Subtitle>
     <slot v-if="props.state === 'OPEN'" />
     <slot v-else name="collapsed" />
   </div>
@@ -13,6 +14,7 @@ import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDes
 import { STATIC_TOKENS } from "./Box.tokens";
 import { useTokenClass } from "@ohto/core/composables";
 import { IBoxProps } from "./Box.types";
+import { Subtitle } from "@ohto/core/components/base";
 
 const props = withDefaults(defineProps<IBoxProps>(), {
   canToggleState: false,
