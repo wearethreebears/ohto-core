@@ -24,6 +24,7 @@ export interface IInputProps {
   autocomplete?: TInputAutoComplete;
   testId?: string;
   icon?: TIcon;
+  required?: boolean;
 }
 
 export interface IInputCustomTokens {

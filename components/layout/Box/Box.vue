@@ -4,8 +4,12 @@
     :class="[tokenClass, designTokenClasses, 'rounded-lg border border-solid']"
   >
     <Subtitle v-if="props.title">{{ props.title }}</Subtitle>
-    <slot v-if="props.state === 'OPEN'" />
-    <slot v-else name="collapsed" />
+    <div v-show="props.state === 'OPEN'">
+      <slot />
+    </div>
+    <div v-show="props.state !== 'OPEN'">
+      <slot name="collapsed" />
+    </div>
   </div>
 </template>
 

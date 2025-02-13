@@ -1,6 +1,12 @@
 <template>
   <Group>
-    <Label :id="id" :label="label" :name="name" :hideLabel="hideLabel" />
+    <Label
+      :id="id"
+      :label="label"
+      :name="name"
+      :hideLabel="hideLabel"
+      :required
+    />
     <div :class="[tokenClass, 'relative']">
       <button
         type="button"
@@ -114,6 +120,7 @@ const {
 
 const props = withDefaults(defineProps<ISelectFromSearch>(), {
   maxItems: 1,
+  required: false,
 });
 const emit = defineEmits(["update:value"]);
 

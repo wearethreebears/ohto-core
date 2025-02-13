@@ -2,6 +2,9 @@ import type { IIconCustomTokens, TIconMap } from "./Icon.types";
 import { defineAsyncComponent } from "vue";
 
 export const ICON_MAP: TIconMap = {
+  ACCOUNT: defineAsyncComponent({
+    loader: () => import("./icons/IconAccount.vue"),
+  }),
   ASSETS: defineAsyncComponent({
     loader: () => import("./icons/IconAssets.vue"),
   }),

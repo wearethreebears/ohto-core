@@ -23,4 +23,6 @@ export interface IIndexTableProps {
   headers: string[];
   rows: IIndexTableRow[];
   pageCount?: number;
+  canDelete?: boolean;
+  paginate?: boolean;
 }

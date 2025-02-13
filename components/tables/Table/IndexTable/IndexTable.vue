@@ -41,14 +41,18 @@
             /></NuxtLink>
           </TD>
           <TD width="44">
-            <div class="flex justify-center">
+            <div v-if="!!canDelete" class="flex justify-center">
               <IconButton icon="TRASH" @click="onDelete(+row.id)" />
             </div>
           </TD>
         </TR>
       </template>
     </Table>
-    <Pagination :page-count @on:change-page="emit('on:change-page')" />
+    <Pagination
+      v-if="!!paginate"
+      :page-count
+      @on:change-page="emit('on:change-page')"
+    />
   </div>
 </template>
 
@@ -61,6 +65,8 @@ import { Pagination } from "@ohto/core/components/page";
 
 const props = withDefaults(defineProps<IIndexTableProps>(), {
   pageCount: 1,
+  canDelete: true,
+  paginate: true,
 });
 
 const emit = defineEmits<{

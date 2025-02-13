@@ -3,10 +3,10 @@
     :class="[
       tokenClass,
       designTokenClasses,
-      'flex justify-center items-center rounded-lg border',
+      'flex h-fit w-fit justify-center items-center rounded-lg border',
     ]"
   >
-    <Control tag="span" theme="INHERIT"> <slot /></Control>
+    <Control tag="span" theme="INHERIT"><slot /></Control>
     <Icon
       v-if="canRemove"
       icon="CROSS"

@@ -23,6 +23,7 @@ export interface ISelectFromSearch {
   value?: ISelectItem | ISelectItem[];
   items: ISelectItem[];
   maxItems?: number;
+  required?: boolean;
 }
 export interface ISelectCustomTokens {
   inputWidth: TPercent;

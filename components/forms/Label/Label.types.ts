@@ -3,4 +3,5 @@ export interface ILabelProps {
   name: string;
   label: string;
   hideLabel?: boolean;
+  required?: boolean;
 }

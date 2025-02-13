@@ -5,6 +5,7 @@
       :label="label"
       :name="name"
       :hideLabel="hideLabel"
+      :required
       class="mb-1"
     />
     <div class="relative">
@@ -26,6 +27,7 @@
           ref="input"
           :data-testid="testId"
           v-bind="$attrs"
+          :required="props.required"
         />
         <Icon
           v-if="props.icon"
@@ -54,6 +56,7 @@ import { ref } from "vue";
 const props = withDefaults(defineProps<IInputProps>(), {
   type: "text",
   hideLabel: false,
+  required: false,
 });
 
 const emit = defineEmits(["update:value", "delete:error"]);
