@@ -8,11 +8,13 @@ import { TSystemSpacing } from "@ohto/core/DesignTokens.types";
 
 export type TDrawerEnterFrom = "DEFAULT" | "LEFT" | "TOP" | "BOTTOM";
 export type TDrawerState = "DEFAULT" | "OPEN";
+export type TDrawerPosition = "DEFAULT" | "FIXED";
 
 export interface IDrawerProps {
   title: string;
   enterFrom?: TDrawerEnterFrom;
   state?: TDrawerState;
+  position?: TDrawerPosition;
 }
 
 export interface IDrawerCustomTokens {
