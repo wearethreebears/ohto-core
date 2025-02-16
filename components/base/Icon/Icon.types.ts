@@ -15,6 +15,7 @@ export type TIcon =
   | "CUSTOMERS"
   | "DISCOUNTS"
   | "EDIT"
+  | "EYE"
   | "FILTERS"
   | "FOLDER_CLOSED"
   | "FOLDER_PLUS"

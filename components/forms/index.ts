@@ -6,6 +6,7 @@ import Fieldset from "./Fieldset/Fieldset.vue";
 import Form from "./Form/Form.vue";
 import Group from "./Group/Group.vue";
 import Input from "./Input/Input.vue";
+import IsValid from "./IsValid/IsValid.vue";
 import StripeInput from "./StripeInput/StripeInput.vue";
 import Label from "./Label/Label.vue";
 import Select from "./Select/Select.vue";
@@ -20,6 +21,7 @@ export {
   Form,
   Group,
   Input,
+  IsValid,
   Label,
   Select,
   SelectFromSearch,

@@ -26,7 +26,6 @@
 <script setup lang="ts">
 import type { IPaginationProps } from "./Pagination.types";
 import { Container } from "@ohto/core/components/layout";
-import type { TPaginationPageState } from "./Pagination.types";
 import PaginationControl from "./PaginationControl/PaginationControl.vue";
 import { arrayFromRange } from "@ohto/core/utilities/arrays";
 import PaginationNumber from "./PaginationNumber/PaginationNumber.vue";
@@ -37,7 +36,7 @@ import { ohtoConfig } from "@ohtoConfig";
 const config = ohtoConfig();
 
 const props = withDefaults(defineProps<IPaginationProps>(), {
-  linkCount: 9,
+  linkCount: 6,
   pageCount: 1,
 });
 
@@ -104,7 +103,6 @@ const getNextPath = (): string => {
 watch(
   () => currentPage.value,
   (newPage) => {
-    console.log("TEST THIS");
     emit("on:change-page", newPage);
   }
 );

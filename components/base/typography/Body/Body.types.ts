@@ -11,6 +11,7 @@ export type TBodyTag =
   | "blockquote"
   | "cite"
   | "del"
+  | "div"
   | "ins"
   | "mark"
   | "p"

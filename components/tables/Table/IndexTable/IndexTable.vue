@@ -37,7 +37,7 @@
           </TD>
           <TD width="44">
             <NuxtLink :to="row.link" class="flex justify-center"
-              ><Icon icon="EDIT"
+              ><Icon icon="EYE"
             /></NuxtLink>
           </TD>
           <TD width="44">

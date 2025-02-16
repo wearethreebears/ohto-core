@@ -47,6 +47,9 @@ export const ICON_MAP: TIconMap = {
   EDIT: defineAsyncComponent({
     loader: () => import("./icons/IconEdit.vue"),
   }),
+  EYE: defineAsyncComponent({
+    loader: () => import("./icons/IconEye.vue"),
+  }),
   FILTERS: defineAsyncComponent({
     loader: () => import("./icons/IconFilters.vue"),
   }),
