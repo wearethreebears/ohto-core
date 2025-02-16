@@ -14,8 +14,6 @@ interface IUseDates {
 }
 
 export default function useDates(): IUseDates {
-  const runtimeConfig = useRuntimeConfig();
-
   const transformDateStringToDateLong = (
     dateString: string,
     options: IDateOptions = {}
