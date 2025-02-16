@@ -45,7 +45,7 @@ export default function useDates(): IUseDates {
     return new Intl.DateTimeFormat("en-GB", {
       timeStyle: options.timeStyle,
       dateStyle: options.dateStyle,
-      timeZone: runtimeConfig.public.TIMEZONE,
+      timeZone: "Europe/London",
     }).format(dateString);
   };
 
