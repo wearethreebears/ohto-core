@@ -1,3 +1,5 @@
+import { useNuxtApp } from "#app";
+
 interface IDateOptions {
   withTime?: boolean;
 }
@@ -14,6 +16,8 @@ interface IUseDates {
 }
 
 export default function useDates(): IUseDates {
+  const { $ohtoConfig } = useNuxtApp();
+
   const transformDateStringToDateLong = (
     dateString: string,
     options: IDateOptions = {}
@@ -43,7 +47,7 @@ export default function useDates(): IUseDates {
     return new Intl.DateTimeFormat("en-GB", {
       timeStyle: options.timeStyle,
       dateStyle: options.dateStyle,
-      timeZone: "Europe/London",
+      timeZone: $ohtoConfig.timezone,
     }).format(dateString);
   };
 

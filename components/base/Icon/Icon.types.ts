@@ -1,6 +1,7 @@
 import type { IDefaultTokens, TFitContent, TPx } from "~/DesignTokens.types";
 
 export type TIcon =
+  | "ACCOUNT"
   | "ASSETS"
   | "ATTRIBUTES"
   | "ATTRIBUTE_TYPES"
@@ -20,6 +21,7 @@ export type TIcon =
   | "FOLDER_CLOSED"
   | "FOLDER_PLUS"
   | "HERETIC_LOGO"
+  | "MENU"
   | "MINUS"
   | "ORDERS"
   | "PRODUCTS"
