@@ -10,6 +10,7 @@
         :width
         :height
         loading="lazy"
+        :alt
       />
     </picture>
   </div>
