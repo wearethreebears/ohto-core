@@ -11,6 +11,7 @@ export interface ISelectItem {
   id: number | string;
   title: string;
   slug?: string;
+  disabled?: boolean;
 }
 
 export interface ISelectFromSearch {

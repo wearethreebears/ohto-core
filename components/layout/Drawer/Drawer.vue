@@ -30,6 +30,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from "vue";
 import { Subtitle, IconButton } from "@ohto/core/components/base";
 import { Aside } from "@ohto/core/components/layout";
 import type { IDrawerProps } from "./Drawer.types";
@@ -61,4 +62,6 @@ const { designTokenClasses } = useComponentDesignTokens(
   },
   CUSTOM_CLASS_TOKEN_MAP
 );
+
+const drawer = ref(null);
 </script>

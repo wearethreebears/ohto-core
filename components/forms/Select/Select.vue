@@ -81,7 +81,11 @@
                 CUSTOM_CLASS_TOKEN_MAP.focus__optionButtonBackgroundColor,
                 CUSTOM_CLASS_TOKEN_MAP.focus__optionButtonTypographyColor,
                 'text-left block h-full w-full outline-none focus:ring-0',
+                item.disabled
+                  ? 'disabled:text-slate-500 disabled:cursor-not-allowed'
+                  : null,
               ]"
+              :disabled="item.disabled"
             >
               {{ item.title }}
             </button>
