@@ -1,14 +1,31 @@
 {
   "name": "@ohto/core",
-  "version": "0.2.35",
+  "version": "0.2.36",
   "author": "Liam Hall",
   "license": "MIT",
   "dependencies": {},
   "description": "Core ohto components, types and utilities for Ohto commerce applications",
-  "main": "index.ts",
-  "devDependencies": {},
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.ts",
+  "devDependencies": {
+    "@nuxt/types": "^2.16.3",
+    "@nuxtjs/tailwindcss": "^6.6.4",
+    "@types/node": "^18.15.5",
+    "@vueuse/core": "^10.1.0",
+    "@vueuse/integrations": "^11.1.0",
+    "cpy-cli": "^5.0.0",
+    "nuxt": "^3.15.1",
+    "typescript": "^5.6.3",
+    "typestyle": "^2.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "cpy 'components' 'composables' 'constants' 'types' 'utilities' 'index.ts' 'dist' --recursive",
+    "prepublishOnly": "yarn prepare"
   },
   "repository": {
     "type": "git",
