@@ -30,8 +30,8 @@
 </template>
 
 <script setup lang="ts">
-import { Subtitle, IconButton } from "@ohto/core/components/base";
-import { Aside } from "@ohto/core/components/layout";
+import { Subtitle, IconButton } from "@ohto/core/dist/components/base";
+import { Aside } from "@ohto/core/dist/components/layout";
 import type { IDrawerProps } from "./Drawer.types";
 import {
   STATE_CLASS_MAP,
@@ -39,8 +39,8 @@ import {
   POSITION_CLASS_MAP,
 } from "./Drawer.map";
 import { ENTER_FROM_TOKENS, STATIC_TOKENS } from "./Drawer.tokens";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
+import { useTokenClass } from "@ohto/core/dist/composables";
 
 const props = withDefaults(defineProps<IDrawerProps>(), {
   state: "DEFAULT",

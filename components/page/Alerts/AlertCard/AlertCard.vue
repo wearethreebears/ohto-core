@@ -18,13 +18,13 @@
 </template>
 
 <script setup lang="ts">
-import { Body, Control, Icon } from "@ohto/core/components/base";
+import { Body, Control, Icon } from "@ohto/core/dist/components/base";
 import { ALERT_CARD_CONFIG_MAP } from "./AlertCard.map";
 import type { IAlertCardProps } from "./AlertCard.types";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./AlertCard.map";
 import { STATIC_TOKENS, TYPE_TOKENS } from "./AlertCard.tokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 
 const props = withDefaults(defineProps<IAlertCardProps>(), {});
 

@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import type { ILabelProps } from "./Label.types";
-import { Control } from "@ohto/core/components/base";
+import { Control } from "@ohto/core/dist/components/base";
 const props = withDefaults(defineProps<ILabelProps>(), {
   hideLabel: false,
   required: false,

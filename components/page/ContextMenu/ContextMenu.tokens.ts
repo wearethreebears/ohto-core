@@ -1,10 +1,10 @@
 import type { TClassMap } from "~/types/components/classes";
 
-import { variableMap } from "@ohto/core/utilities/classes";
+import { variableMap } from "@ohto/core/dist/utilities/classes";
 import type {
   TDrawerPropsEnterFrom,
   TDrawerState,
-} from "@ohto/core/components/layout/Drawer/Drawer.types";
+} from "@ohto/core/dist/components/layout/Drawer/Drawer.types";
 
 export const ENTER_FROM_VARIABLE_MAP: TClassMap<TDrawerPropsEnterFrom> = {
   DEFAULT: variableMap(`

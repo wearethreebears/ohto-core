@@ -14,11 +14,11 @@
 </template>
 
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATIC_TOKENS } from "./Box.tokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 import { IBoxProps } from "./Box.types";
-import { Subtitle } from "@ohto/core/components/base";
+import { Subtitle } from "@ohto/core/dist/components/base";
 
 const props = withDefaults(defineProps<IBoxProps>(), {
   canToggleState: false,

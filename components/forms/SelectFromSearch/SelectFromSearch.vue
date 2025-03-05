@@ -91,16 +91,16 @@
 
 <script setup lang="ts">
 import { watchDebounced, onClickOutside } from "@vueuse/core";
-import useSelect from "@ohto/core/composables/forms/useSelect";
-import { slugifyString } from "@ohto/core/utilities/urls";
-import { Input } from "@ohto/core/components/forms";
-import { Button, Tag } from "@ohto/core/components/base";
+import useSelect from "@ohto/core/dist/composables/forms/useSelect";
+import { slugifyString } from "@ohto/core/dist/utilities/urls";
+import { Input } from "@ohto/core/dist/components/forms";
+import { Button, Tag } from "@ohto/core/dist/components/base";
 import type {
   ISearchSelectItem,
   ISelectFromSearch,
 } from "./SelectFromSearch.types";
-import { useTokenClass } from "@ohto/core/composables";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useTokenClass } from "@ohto/core/dist/composables";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATIC_TOKENS } from "./SelectFromSearch.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./SelectFromSearch.map";
 import { computed, ref, watch } from "vue";

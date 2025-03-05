@@ -59,9 +59,9 @@
 <script setup lang="ts">
 import { ECellDisplay } from "./IndexTable.types";
 import type { IIndexTableProps } from "./IndexTable.types";
-import { Tag, Icon, IconButton, Body } from "@ohto/core/components/base";
-import { Table, TR, TD, TH } from "@ohto/core/components/tables";
-import { Pagination } from "@ohto/core/components/page";
+import { Tag, Icon, IconButton, Body } from "@ohto/core/dist/components/base";
+import { Table, TR, TD, TH } from "@ohto/core/dist/components/tables";
+import { Pagination } from "@ohto/core/dist/components/page";
 
 const props = withDefaults(defineProps<IIndexTableProps>(), {
   pageCount: 1,
