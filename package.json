@@ -24,7 +24,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "cpy 'components' 'composables' 'constants' 'types' 'utilities' 'index.ts' 'dist' --recursive",
+    "prepare": "cpy 'components' 'composables' 'constants' 'types' 'utilities' 'index.ts' 'DesignTokens.map.ts' 'dist' --recursive",
     "prepublishOnly": "yarn prepare"
   },
   "repository": {
