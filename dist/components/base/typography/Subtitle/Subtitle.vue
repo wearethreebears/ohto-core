@@ -4,7 +4,7 @@
   /></component>
 </template>
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import type { ISubtitleProps } from "./Subtitle.types";
 import { THEME_TOKENS, SIZE_TOKENS } from "./Subtitle.tokens";
 import { useTokenClass } from "@ohto/core/composables";

@@ -39,7 +39,7 @@ import {
   POSITION_CLASS_MAP,
 } from "./Drawer.map";
 import { ENTER_FROM_TOKENS, STATIC_TOKENS } from "./Drawer.tokens";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { useTokenClass } from "@ohto/core/composables";
 
 const props = withDefaults(defineProps<IDrawerProps>(), {

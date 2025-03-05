@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { ICON_MAP, CUSTOM_CLASS_TOKEN_MAP } from "./Icon.map";
 import type { IIconProps } from "./Icon.types";
 import { SIZE_TOKENS } from "./Icon.tokens";

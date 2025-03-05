@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATIC_TOKENS } from "./Box.tokens";
 import { useTokenClass } from "@ohto/core/composables";
 import { IBoxProps } from "./Box.types";

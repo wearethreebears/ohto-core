@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import type { ITagProps } from "./Tag.types";
 import { Control, Icon } from "@ohto/core/components/base";
 import { SIZE_TOKENS, THEME_TOKENS } from "./Tag.tokens";

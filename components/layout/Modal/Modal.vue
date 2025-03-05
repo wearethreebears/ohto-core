@@ -46,7 +46,7 @@ import type { IModalProps } from "./Modal.types";
 import { Button, IconButton } from "@ohto/core/components/base";
 import { STATIC_TOKENS } from "./Modal.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Modal.map";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { useTokenClass } from "@ohto/core/composables";
 
 const id = "testId";

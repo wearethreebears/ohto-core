@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { useAlertsStore } from "~/stores/useAlertsStore";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Alerts.map";
 import { STATIC_TOKENS } from "./Alerts.tokens";

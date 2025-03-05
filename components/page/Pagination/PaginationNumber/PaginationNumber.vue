@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATE_TOKENS } from "../Pagination.tokens";
 import type { IPaginationNumber } from "./PaginationNumber.types";
 import type { TPaginationPageState } from "../Pagination.types";

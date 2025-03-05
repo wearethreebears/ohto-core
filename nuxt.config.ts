@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     },
   },
   alias: {
-    "@ohto/core": fileURLToPath(new URL(".", import.meta.url)),
+    "@ohto/core/dist": fileURLToPath(new URL(".", import.meta.url)),
   },
 
   vite: {

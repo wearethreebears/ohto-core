@@ -10,7 +10,7 @@
 import { STATIC_TOKENS } from "./TH.tokens";
 import { Control } from "@ohto/core/components/base";
 import { useTokenClass } from "@ohto/core/composables";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 
 const { tokenClass } = useTokenClass("TH");
 const { designTokenClasses } = useComponentDesignTokens(tokenClass, {

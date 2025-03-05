@@ -48,7 +48,7 @@ import Group from "../Group/Group.vue";
 import Label from "../Label/Label.vue";
 import type { IInputProps } from "./Input.types";
 import { Icon } from "@ohto/core/components/base";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Input.map";
 import { useTokenClass } from "@ohto/core/composables";
 import { ref } from "vue";

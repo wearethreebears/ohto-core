@@ -29,7 +29,7 @@
 import { STATIC_TOKENS } from "../Input/Input.tokens";
 import Group from "../Group/Group.vue";
 import Label from "../Label/Label.vue";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "../Input/Input.map";
 import { useTokenClass } from "@ohto/core/composables";
 import { IStripeInputProps } from "./StripeInput.types";

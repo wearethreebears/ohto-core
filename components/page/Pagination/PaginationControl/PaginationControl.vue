@@ -17,7 +17,7 @@ import type {
   IPaginationControlProps,
   TPaginationControlState,
 } from "./PaginationControl.types";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { useTokenClass } from "@ohto/core/composables";
 import { computed } from "vue";
 

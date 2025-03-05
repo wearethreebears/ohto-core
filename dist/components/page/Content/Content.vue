@@ -34,7 +34,7 @@
 import { Aside } from "@ohto/core/components/layout";
 import { Title } from "@ohto/core/components/base";
 import type { IContentProps } from "./Content.types";
-import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATIC_TOKENS, WIDTH_TOKENS } from "./Content.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Content.map";
 import { useTokenClass } from "@ohto/core/composables";
