@@ -31,13 +31,13 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { Aside } from "@ohto/core/components/layout";
-import { Title } from "@ohto/core/components/base";
+import { Aside } from "@ohto/core/dist/components/layout";
+import { Title } from "@ohto/core/dist/components/base";
 import type { IContentProps } from "./Content.types";
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATIC_TOKENS, WIDTH_TOKENS } from "./Content.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Content.map";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 
 const props = withDefaults(defineProps<IContentProps>(), {
   width: "DEFAULT",

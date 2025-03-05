@@ -31,7 +31,7 @@ import Group from "../Group/Group.vue";
 import Label from "../Label/Label.vue";
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "../Input/Input.map";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 import { IStripeInputProps } from "./StripeInput.types";
 
 const props = withDefaults(defineProps<IStripeInputProps>(), {

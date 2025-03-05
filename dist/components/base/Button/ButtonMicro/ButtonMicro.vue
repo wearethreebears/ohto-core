@@ -17,7 +17,7 @@ import { COMPONENT_MAP } from "../Button.map";
 
 import { THEME_TOKENS, STATIC_TOKENS } from "./ButtonMicro.tokens";
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 
 const props = withDefaults(defineProps<IButtonElementProps>(), {
   theme: "DEFAULT",

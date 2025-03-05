@@ -3,7 +3,7 @@ import type { IBrandResource } from "@ohto/client/types/products/brands.types";
 import type { IProductVariantResource } from "@ohto/client/types/products/variants.types";
 import type { TProductAttributesCollection } from "@ohto/client/types/products/attributes.types";
 import type { EProductStatus } from "@ohto/client/types/products/index.types";
-import type { ISearchSelectItem } from "@ohto/core/components/forms/SelectFromSearch.vue";
+import type { ISearchSelectItem } from "@ohto/core/dist/components/forms/SelectFromSearch.vue";
 import type { TFileCollection } from "@ohto/client/types/folders/files.types";
 import type {
   IBillingModelResource,

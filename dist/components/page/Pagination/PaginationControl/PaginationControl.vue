@@ -12,13 +12,13 @@
 <script setup lang="ts">
 import { ICON_MAP, COMPONENT_MAP } from "./PaginationControl.map";
 import { STATE } from "./PaginationControl.tokens";
-import { Icon } from "@ohto/core/components/base";
+import { Icon } from "@ohto/core/dist/components/base";
 import type {
   IPaginationControlProps,
   TPaginationControlState,
 } from "./PaginationControl.types";
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 import { computed } from "vue";
 
 const state = computed(

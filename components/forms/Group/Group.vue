@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 import { STATIC_TOKENS } from "./Group.tokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 
 const { tokenClass } = useTokenClass("Group");
 const { designTokenClasses } = useComponentDesignTokens(tokenClass, {

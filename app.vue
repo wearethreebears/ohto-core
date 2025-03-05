@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import api from "@ohto/client";
-import { useDesignTokens } from "@ohto/core/composables/useDesignTokens";
+import { useDesignTokens } from "@ohto/core/dist/composables/useDesignTokens";
 
 const token = useCookie("token");
 const authStore = useAuthStore();

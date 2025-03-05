@@ -24,8 +24,8 @@ import { useComponentDesignTokens } from "@ohto/core/dist/composables/useCompone
 import { STATE_TOKENS } from "../Pagination.tokens";
 import type { IPaginationNumber } from "./PaginationNumber.types";
 import type { TPaginationPageState } from "../Pagination.types";
-import { Control } from "@ohto/core/components/base";
-import { useTokenClass } from "@ohto/core/composables";
+import { Control } from "@ohto/core/dist/components/base";
+import { useTokenClass } from "@ohto/core/dist/composables";
 import { computed } from "vue";
 
 const props = withDefaults(defineProps<IPaginationNumber>(), {});

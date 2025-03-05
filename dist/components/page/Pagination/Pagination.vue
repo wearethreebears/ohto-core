@@ -25,9 +25,9 @@
 
 <script setup lang="ts">
 import type { IPaginationProps } from "./Pagination.types";
-import { Container } from "@ohto/core/components/layout";
+import { Container } from "@ohto/core/dist/components/layout";
 import PaginationControl from "./PaginationControl/PaginationControl.vue";
-import { arrayFromRange } from "@ohto/core/utilities/arrays";
+import { arrayFromRange } from "@ohto/core/dist/utilities/arrays";
 import PaginationNumber from "./PaginationNumber/PaginationNumber.vue";
 import { computed, watch } from "vue";
 import { useRouter } from "vue-router";

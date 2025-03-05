@@ -1,4 +1,4 @@
-import FormsInput from "@ohto/core/components/forms/Input/Input.vue";
+import FormsInput from "@ohto/core/dist/components/forms/Input/Input.vue";
 import { ref } from "vue";
 
 interface IUseSelect {

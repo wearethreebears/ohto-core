@@ -7,7 +7,7 @@
 </template>
 <script setup lang="ts">
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
-import { useTokenClass } from "@ohto/core/composables";
+import { useTokenClass } from "@ohto/core/dist/composables";
 import type { IControlProps } from "./Control.types";
 import { SIZE_TOKENS, THEME_TOKENS } from "./Control.tokens";
 

@@ -8,8 +8,8 @@
 
 <script setup lang="ts">
 import { STATIC_TOKENS } from "./TH.tokens";
-import { Control } from "@ohto/core/components/base";
-import { useTokenClass } from "@ohto/core/composables";
+import { Control } from "@ohto/core/dist/components/base";
+import { useTokenClass } from "@ohto/core/dist/composables";
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
 
 const { tokenClass } = useTokenClass("TH");
