@@ -11,6 +11,7 @@ import StripeInput from "./StripeInput/StripeInput.vue";
 import Label from "./Label/Label.vue";
 import Select from "./Select/Select.vue";
 import SelectFromSearch from "./SelectFromSearch/SelectFromSearch.vue";
+import Textarea from "./Textarea/Textarea.vue";
 
 export {
   Checkbox,
@@ -26,4 +27,5 @@ export {
   Select,
   SelectFromSearch,
   StripeInput,
+  Textarea,
 };
