@@ -14,6 +14,9 @@ export const ICON_MAP: TIconMap = {
   ATTRIBUTE_TYPES: defineAsyncComponent({
     loader: () => import("./icons/IconAttributeTypes.vue"),
   }),
+  BOLD: defineAsyncComponent({
+    loader: () => import("./icons/IconBold.vue"),
+  }),
   BRANDS: defineAsyncComponent({
     loader: () => import("./icons/IconBrands.vue"),
   }),
@@ -62,6 +65,18 @@ export const ICON_MAP: TIconMap = {
   HERETIC_LOGO: defineAsyncComponent({
     loader: () => import("./icons/IconHereticLogo.vue"),
   }),
+  HOME: defineAsyncComponent({
+    loader: () => import("./icons/IconHome.vue"),
+  }),
+  LINK: defineAsyncComponent({
+    loader: () => import("./icons/IconLink.vue"),
+  }),
+  LIST_BULLET: defineAsyncComponent({
+    loader: () => import("./icons/IconListBullet.vue"),
+  }),
+  LIST_NUMBERED: defineAsyncComponent({
+    loader: () => import("./icons/IconListNumbered.vue"),
+  }),
   MENU: defineAsyncComponent({
     loader: () => import("./icons/IconMenu.vue"),
   }),
@@ -91,6 +106,9 @@ export const ICON_MAP: TIconMap = {
   }),
   TRASH: defineAsyncComponent({
     loader: () => import("./icons/IconTrash.vue"),
+  }),
+  UNLINK: defineAsyncComponent({
+    loader: () => import("./icons/IconUnlink.vue"),
   }),
   UPLOAD: defineAsyncComponent({
     loader: () => import("./icons/IconUpload.vue"),

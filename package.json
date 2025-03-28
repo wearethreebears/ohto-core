@@ -1,9 +1,14 @@
 {
   "name": "@ohto/core",
-  "version": "0.2.42",
+  "version": "0.2.44",
   "author": "Liam Hall",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@tiptap/extension-link": "^2.11.5",
+    "@tiptap/pm": "^2.11.5",
+    "@tiptap/starter-kit": "^2.11.5",
+    "@tiptap/vue-3": "^2.11.5"
+  },
   "description": "Core ohto components, types and utilities for Ohto commerce applications",
   "files": [
     "dist"

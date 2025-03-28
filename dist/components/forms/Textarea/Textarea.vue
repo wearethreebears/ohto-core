@@ -20,7 +20,7 @@
             props.class,
             designTokenClasses,
             customDesignTokenClasses,
-            'block rounded-md border',
+            'block rounded-md border w-full min-h-[150px]',
           ]"
           @input="onTextarea($event)"
           ref="input"
