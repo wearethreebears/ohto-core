@@ -5,6 +5,7 @@ export type TIcon =
   | "ASSETS"
   | "ATTRIBUTES"
   | "ATTRIBUTE_TYPES"
+  | "BOLD"
   | "BRANDS"
   | "CART"
   | "CHEVRON_DOWN"
@@ -20,7 +21,11 @@ export type TIcon =
   | "FILTERS"
   | "FOLDER_CLOSED"
   | "FOLDER_PLUS"
+  | "HOME"
   | "HERETIC_LOGO"
+  | "LINK"
+  | "LIST_BULLET"
+  | "LIST_NUMBERED"
   | "MENU"
   | "MINUS"
   | "ORDERS"
@@ -31,6 +36,7 @@ export type TIcon =
   | "TICK"
   | "TICK_FILLED"
   | "TRASH"
+  | "UNLINK"
   | "UPLOAD"
   | "WARNING";
 

@@ -9,6 +9,7 @@ import Input from "./Input/Input.vue";
 import IsValid from "./IsValid/IsValid.vue";
 import StripeInput from "./StripeInput/StripeInput.vue";
 import Label from "./Label/Label.vue";
+import RichTextEditor from "./RichTextEditor/RichTextEditor.vue";
 import Select from "./Select/Select.vue";
 import SelectFromSearch from "./SelectFromSearch/SelectFromSearch.vue";
 import Textarea from "./Textarea/Textarea.vue";
@@ -24,6 +25,7 @@ export {
   Input,
   IsValid,
   Label,
+  RichTextEditor,
   Select,
   SelectFromSearch,
   StripeInput,
