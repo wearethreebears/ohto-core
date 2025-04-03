@@ -1,13 +1,4 @@
-<template>
-  <div v-html="renderedContent" />
-</template>
-
-<script setup lang="ts">
-import { computed } from "vue";
-import type { IRichTextRenderer } from "./RichTextRenderer.types";
 import type { JSONContent } from "@tiptap/vue-3";
-
-const props = withDefaults(defineProps<IRichTextRenderer>(), {});
 
 const renderNode = (node: JSONContent): string | undefined => {
   if (node.type === "text") {
@@ -54,9 +45,6 @@ const renderNode = (node: JSONContent): string | undefined => {
   return "";
 };
 
-const renderedContent = computed(() => {
-  if (!props.json || !props.json.content) return "";
-
-  return props.json.content.map(renderNode).join("");
-});
-</script>
+export const renderRichTextHTML = (json: JSONContent) => {
+  return json.content?.map(renderNode).join("");
+};

@@ -1,5 +1,6 @@
 import type { TIcon } from "@ohto/core/dist/components/base/Icon/Icon.types";
 import type { IDefaultTokens, TPercent, TRem } from "~/DesignTokens.types";
+import type { JSONContent } from "@tiptap/vue-3";
 
 export interface IRichTextEditorProps {
   id: string;
@@ -13,6 +14,7 @@ export interface IRichTextEditorProps {
   testId?: string;
   icon?: TIcon;
   required?: boolean;
+  defaultContent?: JSONContent;
 }
 
 export interface IRichTextCustomTokens {

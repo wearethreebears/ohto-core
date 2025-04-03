@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import Icon from "~/components/base/Icon/Icon.vue";
+import Icon from "../../../base/Icon/Icon.vue";
 import type { IRichTextEditorControlProps } from "./RichTextEditorControl.types";
 import { RICH_TEXT_EDITOR_CONTROL_STATE_CLASS_MAP } from "./RichTextEditorControl.map";
 
