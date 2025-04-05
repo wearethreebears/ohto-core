@@ -80,6 +80,7 @@ import RichTextEditorControl from "./RichTextEditorControl/RichTextEditorControl
 import type { TRichTextEditorControlState } from "./RichTextEditorControl/RichTextEditorControl.types";
 import { useTokenClass } from "@ohto/core/dist/composables";
 import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
+import { renderRichTextHTML } from "@ohto/core/dist/components/renderer/RichTextRenderer/RichTextRenderer.utils";
 
 const props = withDefaults(defineProps<IRichTextEditorProps>(), {
   hideLabel: false,
@@ -134,7 +135,7 @@ onMounted(() => {
         },
       }),
     ],
-    content: ``,
+    content: props.defaultContent ? renderRichTextHTML(props.defaultContent) : "",
     editorProps: {
       attributes: {
         class: "flex-grow p-4",
