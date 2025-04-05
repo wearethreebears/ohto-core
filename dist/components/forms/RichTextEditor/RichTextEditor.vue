@@ -60,6 +60,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import Error from "../Error/Error.vue";
 import Group from "../Group/Group.vue";
 import Label from "../Label/Label.vue";
@@ -72,7 +73,12 @@ import OrderedList from "@tiptap/extension-ordered-list";
 import BulletList from "@tiptap/extension-bullet-list";
 import ListItem from "@tiptap/extension-list-item";
 import Text from "@tiptap/extension-text";
-import { Editor, EditorContent, type JSONContent } from "@tiptap/vue-3";
+import {
+  Editor,
+  EditorContent,
+  type AnyExtension,
+  type JSONContent,
+} from "@tiptap/vue-3";
 import type { IRichTextEditorProps } from "./RichTextEditor.types";
 import { STATIC_TOKENS } from "./RichTextEditor.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./RichTextEditor.map";
@@ -133,7 +139,7 @@ onMounted(() => {
           class: "font-bold underline",
         },
       }),
-    ],
+    ].filter(Boolean) as AnyExtension[],
     content: props.defaultContent || "",
     editorProps: {
       attributes: {
