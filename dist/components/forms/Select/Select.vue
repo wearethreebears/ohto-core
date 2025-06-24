@@ -122,7 +122,7 @@ const props = withDefaults(defineProps<ISelectFromSearch>(), {
   maxItems: 1,
   required: false,
 });
-const emit = defineEmits(["update:value"]);
+const emit = defineEmits(["update:value", "scroll:end"]);
 
 const selectItem = (selectItem: ISelectItem) => {
   if (Array.isArray(props.value)) {
@@ -164,4 +164,29 @@ const { designTokenClasses } = useComponentDesignTokens(
   },
   CUSTOM_CLASS_TOKEN_MAP
 );
+
+const handleScroll = () => {
+  if (optionsPanel.value) {
+    const { scrollTop, scrollHeight, clientHeight } = optionsPanel.value;
+    // Check if the panel is scrolled to the bottom
+    if (scrollHeight - scrollTop === clientHeight) {
+      console.log("!!SCROLL END!!@");
+      emit("scroll:end");
+    }
+  }
+};
+
+onMounted(() => {
+  // Add scroll event listener when the component is mounted
+  if (optionsPanel.value) {
+    optionsPanel.value.addEventListener("scroll", handleScroll);
+  }
+});
+
+onBeforeUnmount(() => {
+  // Remove the scroll event listener when the component is unmounted
+  if (optionsPanel.value) {
+    optionsPanel.value.removeEventListener("scroll", handleScroll);
+  }
+});
 </script>
