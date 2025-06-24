@@ -168,9 +168,7 @@ const { designTokenClasses } = useComponentDesignTokens(
 const handleScroll = () => {
   if (optionsPanel.value) {
     const { scrollTop, scrollHeight, clientHeight } = optionsPanel.value;
-    // Check if the panel is scrolled to the bottom
     if (scrollHeight - scrollTop === clientHeight) {
-      console.log("!!SCROLL END!!@");
       emit("scroll:end");
     }
   }

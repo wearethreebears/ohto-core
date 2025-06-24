@@ -95,7 +95,7 @@
 
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
-import { computed } from "vue";
+import { computed, onMounted, onBeforeUnmount } from "vue";
 import useSelect from "@ohto/core/dist/composables/forms/useSelect";
 import Group from "../Group/Group.vue";
 import Label from "../Label/Label.vue";
