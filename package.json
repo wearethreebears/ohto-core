@@ -36,9 +36,8 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "cpy 'components' 'composables' 'constants' 'types' 'utilities' 'index.ts' 'DesignTokens.map.ts' 'dist' --recursive",
-    "prepublishOnly": "yarn prepare",
-    "prepare:watch": "chokidar 'components/**' 'composables/**' 'constants/**' 'types/**' 'utilities/**' 'index.ts' 'DesignTokens.map.ts' -c 'cpy {path} dist/{dir}'"
+    "prepare": "",
+    "prepublishOnly": ""
   },
   "packageManager": "pnpm@9.7.0",
   "repository": {
