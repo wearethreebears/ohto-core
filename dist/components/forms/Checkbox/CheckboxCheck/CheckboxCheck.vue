@@ -14,9 +14,9 @@
 </template>
 
 <script setup lang="ts">
-import { useTokenClass } from "@ohto/core/dist/composables";
+import { useTokenClass } from "@ohto/core/composables";
 import type { ICheckboxToggleProps } from "./CheckboxCheck.types";
-import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
 import { STATIC_TOKENS } from "./CheckboxCheck.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./CheckboxCheck.map";
 import { Icon } from "../../../base";

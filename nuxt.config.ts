@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     resolve: {
       alias: {
         "@ohtoConfig": "./ohto.config.ts",
-        "@ohto/core/dist/*": "./*",
+        "@ohto/core/*": "./*",
       },
     },
   },

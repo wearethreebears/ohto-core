@@ -3,8 +3,8 @@ import type { IChargeTypeResource } from "@ohto/client/types/charge-types";
 import type { IDiscountUnitTypeResource } from "@ohto/client/types/discounts/discount-unit-types/discount-unit-types.types";
 import type { IEligibleUserGroupResource } from "@ohto/client/types/eligible-user-groups/eligible-user-groups.types";
 import type { ETruthy } from "@ohto/utilities/types/booleans";
-import type { ISelectItem } from "@ohto/core/dist/components/forms/Select.vue";
-import type { ISearchSelectItem } from "@ohto/core/dist/components/forms/SelectFromSearch.vue";
+import type { ISelectItem } from "@ohto/core/components/forms/Select.vue";
+import type { ISearchSelectItem } from "@ohto/core/components/forms/SelectFromSearch.vue";
 
 export interface ICreateEditDiscountFormData {
   id?: number;

@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { getDynamicClassListFromProp } from "@ohto/core/dist/utilities/components";
+import { getDynamicClassListFromProp } from "@ohto/core/utilities/components";
 import type { IColumnProps } from "./Column.types";
 
 const props = withDefaults(defineProps<IColumnProps>(), {

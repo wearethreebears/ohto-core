@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import { Control } from "@ohto/core/dist/components/base";
+import { Control } from "@ohto/core/components/base";
 </script>

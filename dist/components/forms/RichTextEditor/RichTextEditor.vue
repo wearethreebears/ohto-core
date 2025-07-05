@@ -84,8 +84,8 @@ import { STATIC_TOKENS } from "./RichTextEditor.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./RichTextEditor.map";
 import RichTextEditorControl from "./RichTextEditorControl/RichTextEditorControl.vue";
 import type { TRichTextEditorControlState } from "./RichTextEditorControl/RichTextEditorControl.types";
-import { useTokenClass } from "@ohto/core/dist/composables";
-import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
+import { useTokenClass } from "@ohto/core/composables";
+import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
 
 const props = withDefaults(defineProps<IRichTextEditorProps>(), {
   hideLabel: false,

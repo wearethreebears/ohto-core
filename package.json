@@ -1,6 +1,6 @@
 {
   "name": "@ohto/core",
-  "version": "0.2.53",
+  "version": "0.2.54",
   "author": "Liam Hall",
   "license": "MIT",
   "dependencies": {
@@ -11,9 +11,15 @@
   },
   "description": "Core ohto components, types and utilities for Ohto commerce applications",
   "files": [
-    "dist"
+    "components",
+    "composables",
+    "constants",
+    "types",
+    "utilities",
+    "index.ts",
+    "DesignTokens.map.ts"
   ],
-  "main": "dist/index.ts",
+  "main": "index.ts",
   "devDependencies": {
     "@nuxt/types": "^2.16.3",
     "@nuxtjs/tailwindcss": "^6.6.4",
@@ -34,6 +40,7 @@
     "prepublishOnly": "yarn prepare",
     "prepare:watch": "chokidar 'components/**' 'composables/**' 'constants/**' 'types/**' 'utilities/**' 'index.ts' 'DesignTokens.map.ts' -c 'cpy {path} dist/{dir}'"
   },
+  "packageManager": "pnpm@9.7.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wearethreebears/ohto-core.git"

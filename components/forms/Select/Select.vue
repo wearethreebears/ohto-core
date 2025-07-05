@@ -96,14 +96,14 @@
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
 import { computed, onMounted, onBeforeUnmount } from "vue";
-import useSelect from "@ohto/core/dist/composables/forms/useSelect";
+import useSelect from "@ohto/core/composables/forms/useSelect";
 import Group from "../Group/Group.vue";
 import Label from "../Label/Label.vue";
 import Error from "../Error/Error.vue";
 import type { ISelectItem, ISelectFromSearch } from "./Select.types";
-import { Icon } from "@ohto/core/dist/components/base";
-import { useTokenClass } from "@ohto/core/dist/composables";
-import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
+import { Icon } from "@ohto/core/components/base";
+import { useTokenClass } from "@ohto/core/composables";
+import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
 import { STATIC_TOKENS } from "./Select.tokens";
 import { CUSTOM_CLASS_TOKEN_MAP } from "./Select.map";
 

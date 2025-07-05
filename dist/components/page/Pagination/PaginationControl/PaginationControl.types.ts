@@ -1,5 +1,5 @@
 import type { IDefaultTokens } from "~/DesignTokens.types";
-import type { TIcon } from "@ohto/core/dist/components/base/Icon/Icon.types";
+import type { TIcon } from "@ohto/core/components/base/Icon/Icon.types";
 
 export type TPaginationControlDirection = "PREVIOUS" | "NEXT";
 export type TPaginationControlState = "DEFAULT" | "DISABLED";

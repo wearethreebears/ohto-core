@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { IImageProps } from "./Image.types";
+import { type IImageProps } from "./Image.types";
 import { IMAGE_DISPLAY_MAP } from "./Image.map";
 import { computed } from "vue";
 

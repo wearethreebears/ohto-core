@@ -6,10 +6,10 @@
   /></component>
 </template>
 <script setup lang="ts">
-import { useComponentDesignTokens } from "@ohto/core/dist/composables/useComponentDesignTokens";
+import { useComponentDesignTokens } from "@ohto/core/composables/useComponentDesignTokens";
 import type { IBodyProps } from "./Body.types";
 import { SIZE_TOKENS, THEME_TOKENS } from "./Body.tokens";
-import { useTokenClass } from "@ohto/core/dist/composables";
+import { useTokenClass } from "@ohto/core/composables";
 
 const props = withDefaults(defineProps<IBodyProps>(), {
   tag: "p",

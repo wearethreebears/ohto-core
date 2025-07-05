@@ -1,4 +1,4 @@
-import type { TIcon } from "@ohto/core/dist/components/base/Icon/Icon.types";
+import type { TIcon } from "@ohto/core/components/base/Icon/Icon.types";
 
 export interface IRichTextEditorControlProps {
   label: string;

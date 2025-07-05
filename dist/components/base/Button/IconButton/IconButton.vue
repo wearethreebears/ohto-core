@@ -9,7 +9,7 @@
 </template>
 <script setup lang="ts">
 import type { IIconButtonProps } from "./IconButton.types";
-import { Icon } from "@ohto/core/dist/components/base";
+import { Icon } from "@ohto/core/components/base";
 
 const props = withDefaults(defineProps<IIconButtonProps>(), {});
 </script>
