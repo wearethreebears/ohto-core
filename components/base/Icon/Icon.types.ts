@@ -30,6 +30,7 @@ export type TIcon =
   | "MINUS"
   | "ORDERS"
   | "PRODUCTS"
+  | "PRODUCT_COLLECTIONS"
   | "PLUS"
   | "PROFILE"
   | "SEARCH"

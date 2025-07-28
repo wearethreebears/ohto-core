@@ -70,19 +70,21 @@
         </ul>
       </div>
       <template #after>
-        <ul class="flex mt-2" v-show="!!value.length">
-          <li v-for="tag in value" :key="tag.id">
-            <Tag
-              :id="tag.id"
-              canRemove
-              @delete:tag="deleteItem"
-              size="MICRO"
-              theme="SECONDARY"
-            >
-              {{ tag.title }}
-            </Tag>
-          </li>
-        </ul>
+        <slot name="selected" :value="props.value" :deleteItem="deleteItem">
+          <ul class="flex mt-2" v-show="!!value.length">
+            <li v-for="tag in value" :key="tag.id">
+              <Tag
+                :id="tag.id"
+                canRemove
+                @delete:tag="deleteItem"
+                size="MICRO"
+                theme="SECONDARY"
+              >
+                {{ tag.title }}
+              </Tag>
+            </li>
+          </ul>
+        </slot>
       </template>
     </Input>
     <div v-else>Limit reached</div>
