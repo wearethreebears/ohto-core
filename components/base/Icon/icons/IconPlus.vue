@@ -1,5 +1,5 @@
 <template>
-  <svg data-component="IconPlus" data-slot="root" fill="none" viewBox="0 0 24 24">
+  <svg fill="none" viewBox="0 0 24 24">
     <path
       stroke="currentColor"
       stroke-linecap="round"
