@@ -1,5 +1,9 @@
 <template>
-  <component data-component="Subtitle" data-slot="root" :is="tag" :class="[tokenClass, designTokenClasses, 'font-sans']"
+  <component
+    data-component="Subtitle"
+    data-slot="root"
+    :is="tag"
+    :class="[tokenClass, designTokenClasses, 'font-sans']"
     ><slot
   /></component>
 </template>

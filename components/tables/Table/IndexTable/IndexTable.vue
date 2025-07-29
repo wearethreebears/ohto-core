@@ -1,5 +1,9 @@
 <template>
-  <div data-component="IndexTable" data-slot="root" class="flex flex-col flex-1">
+  <div
+    data-component="IndexTable"
+    data-slot="root"
+    class="flex flex-col flex-1"
+  >
     <Table>
       <template v-slot:head>
         <TR>

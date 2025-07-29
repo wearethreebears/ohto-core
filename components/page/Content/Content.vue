@@ -1,5 +1,9 @@
 <template>
-  <div data-component="Content" data-slot="root" :class="['w-full flex flex-col', tokenClass]">
+  <div
+    data-component="Content"
+    data-slot="root"
+    :class="['w-full flex flex-col', tokenClass]"
+  >
     <div class="flex mb-8">
       <div class="flex flex-1 space-x-4">
         <div class="flex-1 justify-center flex items-center">

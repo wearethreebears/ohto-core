@@ -1,5 +1,9 @@
 <template>
-  <div data-component="RichTextRenderer" data-slot="root" v-html="renderedContent" />
+  <div
+    data-component="RichTextRenderer"
+    data-slot="root"
+    v-html="renderedContent"
+  />
 </template>
 
 <script setup lang="ts">
