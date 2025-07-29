@@ -1,5 +1,9 @@
 <template>
-  <Group data-component="Input" data-slot="root" :class="[tokenClass, { 'sr-only': type === 'hidden' }]">
+  <Group
+    data-component="Input"
+    data-slot="root"
+    :class="[tokenClass, { 'sr-only': type === 'hidden' }]"
+  >
     <Label
       :id="id"
       :label="label"

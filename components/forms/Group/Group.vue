@@ -1,5 +1,9 @@
 <template>
-  <div data-component="Group" data-slot="root" :class="[tokenClass, designTokenClasses, 'flex flex-col']">
+  <div
+    data-component="Group"
+    data-slot="root"
+    :class="[tokenClass, designTokenClasses, 'flex flex-col']"
+  >
     <slot />
   </div>
 </template>
