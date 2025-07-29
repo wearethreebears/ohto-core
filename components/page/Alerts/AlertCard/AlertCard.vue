@@ -1,5 +1,7 @@
 <template>
   <li
+    data-component="AlertCard"
+    data-slot="root"
     :class="[
       tokenClass,
       designTokenClasses,

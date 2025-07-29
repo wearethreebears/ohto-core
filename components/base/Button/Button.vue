@@ -1,5 +1,7 @@
 <template>
   <component
+    data-component="Button"
+    data-slot="root"
     :is="DISPLAY_MAP[props.display]"
     :component="$attrs.href ? 'LINK' : 'DEFAULT'"
     v-bind="props"

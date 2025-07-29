@@ -1,5 +1,5 @@
 <template>
-  <div :class="[tokenClass, 'relative']">
+  <div data-component="SelectFromSearch" data-slot="root" :class="[tokenClass, 'relative']">
     <Input
       v-if="isItemLimitMet"
       v-bind="props"

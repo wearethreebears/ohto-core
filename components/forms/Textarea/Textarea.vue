@@ -1,5 +1,5 @@
 <template>
-  <Group :class="[tokenClass]">
+  <Group data-component="Textarea" data-slot="root" :class="[tokenClass]">
     <Label
       :id="id"
       :label="label"

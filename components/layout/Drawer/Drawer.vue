@@ -1,6 +1,7 @@
 <template>
   <Aside
     data-component="Drawer"
+    data-slot="root"
     ref="drawer"
     :aria-hidden="state === 'DEFAULT'"
     :class="[

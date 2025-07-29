@@ -1,5 +1,5 @@
 <template>
-  <Group>
+  <Group data-component="Select" data-slot="root">
     <Label
       :id="id"
       :label="label"

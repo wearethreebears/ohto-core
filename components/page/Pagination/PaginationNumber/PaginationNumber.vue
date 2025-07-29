@@ -1,5 +1,7 @@
 <template>
   <NuxtLink
+    data-component="PaginationNumber"
+    data-slot="root"
     :to="props.to"
     :class="[
       tokenClass,

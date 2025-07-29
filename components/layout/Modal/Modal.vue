@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-component="Modal" data-slot="root">
     <template v-if="$slots.button">
       <button
         :popovertarget="id"

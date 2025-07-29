@@ -1,5 +1,5 @@
 <template>
-  <div class="relative" :style="wrapperStyle">
+  <div data-component="Image" data-slot="root" class="relative" :style="wrapperStyle">
     <picture>
       <img
         :class="[

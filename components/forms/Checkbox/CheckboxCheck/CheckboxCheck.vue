@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div data-component="CheckboxCheck" data-slot="root" class="flex">
     <slot />
     <div class="group relative inline-flex items-center">
       <span class="sr-only">{{ props.label }}</span>

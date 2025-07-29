@@ -1,6 +1,7 @@
 <template>
   <Label
     data-component="Checkbox"
+    data-slot="root"
     :label="label"
     :name="name"
     :hide-label="hideLabel"

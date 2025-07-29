@@ -1,5 +1,5 @@
 <template>
-  <Control tag="span" data-component="Error">
+  <Control tag="span" data-component="Error" data-slot="root">
     <slot />
   </Control>
 </template>

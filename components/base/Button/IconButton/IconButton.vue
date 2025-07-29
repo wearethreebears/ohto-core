@@ -1,5 +1,7 @@
 <template>
   <button
+    data-component="IconButton"
+    data-slot="root"
     class="min-w-11 min-h-11 flex justify-center items-center cursor-pointer"
     type="button"
     :aria-label="props.label"

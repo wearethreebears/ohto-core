@@ -1,5 +1,7 @@
 <template>
   <component
+    data-component="Title"
+    data-slot="root"
     :is="tag"
     :class="[tokenClass, designTokenClasses, 'font-bold font-sans']"
     ><slot

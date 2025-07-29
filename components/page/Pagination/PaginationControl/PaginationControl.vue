@@ -1,5 +1,7 @@
 <template>
   <component
+    data-component="PaginationControl"
+    data-slot="root"
     :is="COMPONENT_MAP[state]"
     :to="props.to"
     :aria-label="ICON_MAP[props.direction].icon"

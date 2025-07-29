@@ -1,5 +1,5 @@
 <template>
-  <fieldset data-component="Fieldset" class="flex flex-col">
+  <fieldset data-component="Fieldset" data-slot="root" class="flex flex-col">
     <legend>
       <Control tag="span">{{ title }}</Control>
     </legend>

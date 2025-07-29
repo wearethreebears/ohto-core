@@ -1,5 +1,10 @@
 <template>
-  <th scope="col" :class="[tokenClass, designTokenClasses, 'text-left']">
+  <th
+    data-component="TH"
+    data-slot="root"
+    scope="col"
+    :class="[tokenClass, designTokenClasses, 'text-left']"
+  >
     <Control tag="span">
       <slot />
     </Control>

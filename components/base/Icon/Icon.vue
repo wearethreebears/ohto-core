@@ -1,5 +1,5 @@
 <template>
-  <div :class="[tokenClass, customDesignTokenClasses]">
+  <div data-component="Icon" data-slot="root" :class="[tokenClass, customDesignTokenClasses]">
     <component :is="ICON_MAP[props.icon]" />
   </div>
 </template>

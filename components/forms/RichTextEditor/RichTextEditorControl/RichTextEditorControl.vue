@@ -1,5 +1,7 @@
 <template>
   <button
+    data-component="RichTextEditorControl"
+    data-slot="root"
     class="h-11 w-11 flex justify-center items-center"
     @click="emit('on:click')"
   >

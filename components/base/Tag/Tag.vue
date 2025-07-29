@@ -1,5 +1,7 @@
 <template>
   <div
+    data-component="Tag"
+    data-slot="root"
     :class="[
       tokenClass,
       designTokenClasses,

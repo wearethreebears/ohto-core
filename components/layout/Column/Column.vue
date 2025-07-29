@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" data-component="Column" :class="computedClassNames">
+  <component :is="tag" data-component="Column" data-slot="root" :class="computedClassNames">
     <slot />
   </component>
 </template>

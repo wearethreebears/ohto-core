@@ -1,5 +1,9 @@
 <template>
-  <div class="w-full h-full block overflow-x-scroll whitespace-nowrap">
+  <div
+    data-component="Table"
+    data-slot="root"
+    class="w-full h-full block overflow-x-scroll whitespace-nowrap"
+  >
     <table class="w-full table-auto divide-y divide-gray-200">
       <thead class="border-b border-solid border-black/20">
         <slot name="head" />
