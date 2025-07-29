@@ -1,5 +1,7 @@
 <template>
   <component
+    data-component="ButtonDefault"
+    data-slot="root"
     :is="COMPONENT_MAP[props.component]"
     :class="[
       tokenClass,

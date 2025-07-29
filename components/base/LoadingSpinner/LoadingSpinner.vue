@@ -1,5 +1,5 @@
 <template>
-  <div role="status">
+  <div data-component="LoadingSpinner" data-slot="root" role="status">
     <svg
       aria-hidden="true"
       class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600"

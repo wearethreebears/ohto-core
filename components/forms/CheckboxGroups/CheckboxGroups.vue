@@ -1,5 +1,5 @@
 <template>
-  <Group data-component="CheckboxGroups">
+  <Group data-component="CheckboxGroups" data-slot="root">
     <Fieldset :title="title">
       <CheckboxGroup
         v-for="checkboxGroup in checkboxGroups"

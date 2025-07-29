@@ -1,5 +1,5 @@
 <template>
-  <div class="block">
+  <div data-component="CheckboxToggle" data-slot="root" class="block">
     <slot />
     <div class="group relative inline-flex items-center">
       <span class="sr-only">{{ props.label }}</span>

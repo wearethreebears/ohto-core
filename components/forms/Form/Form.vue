@@ -1,5 +1,5 @@
 <template>
-  <form v-bind="props" class="w-full">
+  <form data-component="Form" data-slot="root" v-bind="props" class="w-full">
     <slot />
   </form>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <Icon :icon="props.isValid ? 'TICK' : 'CROSS'" />
+  <Icon data-component="IsValid" data-slot="root" :icon="props.isValid ? 'TICK' : 'CROSS'" />
 </template>
 
 <script setup lang="ts">

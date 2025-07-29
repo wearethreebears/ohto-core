@@ -1,5 +1,5 @@
 <template>
-  <label data-component="Label" :for="props.id || props.name">
+  <label data-component="Label" data-slot="root" :for="props.id || props.name">
     <Control :class="hideLabel && 'sr-only'">{{ label }}</Control>
     <span v-if="props.required" class="text-red-500"> *</span>
     <slot />

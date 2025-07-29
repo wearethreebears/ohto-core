@@ -1,5 +1,5 @@
 <template>
-  <Container data-component="Pagination" class="flex justify-center">
+  <Container data-component="Pagination" data-slot="root" class="flex justify-center">
     <nav class="justify-center items-center" label="Pagination">
       <ol class="flex">
         <li class="flex justify-center items-center">

@@ -1,5 +1,7 @@
 <template>
   <div
+    data-component="ContextMenu"
+    data-slot="root"
     ref="contextMenu"
     class="absolute box-border border border-solid border-gray-200 z-10 mt-1 max-h-60 w-fit overflow-auto rounded-md bg-white text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
     :style="`top: ${contextMenuStore?.coordinates?.y}px; left: ${contextMenuStore?.coordinates?.x}px;`"

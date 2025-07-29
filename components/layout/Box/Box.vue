@@ -1,6 +1,7 @@
 <template>
   <div
     data-component="Box"
+    data-slot="root"
     :class="[tokenClass, designTokenClasses, 'rounded-lg border border-solid']"
   >
     <Subtitle v-if="props.title">{{ props.title }}</Subtitle>

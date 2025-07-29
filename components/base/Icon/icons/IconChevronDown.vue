@@ -1,5 +1,5 @@
 <template>
-  <svg fill="none" viewBox="0 0 24 24">
+  <svg data-component="IconChevronDown" data-slot="root" fill="none" viewBox="0 0 24 24">
     <path
       stroke="currentColor"
       stroke-linecap="round"

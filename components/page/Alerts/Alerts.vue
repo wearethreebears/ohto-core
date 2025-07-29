@@ -1,5 +1,7 @@
 <template>
   <ul
+    data-component="Alerts"
+    data-slot="root"
     :class="[
       tokenClass,
       designTokenClasses,

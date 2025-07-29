@@ -1,5 +1,9 @@
 <template>
-  <td :class="[tokenClass, designTokenClasses, 'whitespace-nowrap']">
+  <td
+    data-component="TD"
+    data-slot="root"
+    :class="[tokenClass, designTokenClasses, 'whitespace-nowrap']"
+  >
     <slot />
   </td>
 </template>

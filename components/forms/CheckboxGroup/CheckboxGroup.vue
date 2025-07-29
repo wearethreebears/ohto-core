@@ -1,5 +1,5 @@
 <template>
-  <Group data-component="CheckboxGroup">
+  <Group data-component="CheckboxGroup" data-slot="root">
     <Fieldset :title="title">
       <div class="flex flex-wrap space-x-2">
         <Checkbox

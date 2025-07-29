@@ -1,5 +1,5 @@
 <template>
-  <tr :class="[tokenClass, designTokenClasses, 'border-b']">
+  <tr data-component="TR" data-slot="root" :class="[tokenClass, designTokenClasses, 'border-b']">
     <slot />
   </tr>
 </template>
