@@ -92,6 +92,9 @@ export const ICON_MAP: TIconMap = {
   PRODUCT_COLLECTIONS: defineAsyncComponent({
     loader: () => import("./icons/IconProductCollections.vue"),
   }),
+  PRODUCT_CATEGORIES: defineAsyncComponent({
+    loader: () => import("./icons/IconProductCategories.vue"),
+  }),
   PRODUCTS: defineAsyncComponent({
     loader: () => import("./icons/IconProducts.vue"),
   }),

@@ -5,6 +5,8 @@ import type { TProductAttributesCollection } from "@ohto/client/types/products/a
 import type { EProductStatus } from "@ohto/client/types/products/index.types";
 import type { ISearchSelectItem } from "@ohto/core/components/forms/SelectFromSearch.vue";
 import type { TFileCollection } from "@ohto/client/types/folders/files.types";
+import type { TProductCategoryCollection } from "@ohto/client/types/product-categories/index.types";
+import type { JSONContent } from "@tiptap/vue-3";
 import type {
   IBillingModelResource,
   IBillingModelTypeResource,
@@ -35,6 +37,8 @@ export interface ICreateEditProductFormData {
   id?: number;
   title: string;
   slug: string;
+  description?: string | JSONContent;
+  productCategories?: TProductCategoryCollection;
   brand?: IBrandResource;
   createdBy: number;
   updatedBy: number;
